@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Operations-Tool</title>
+</head>
+<body>
+<h1>Text-Operations-Tool</h1>
+<p>Welcome to the Text-Operations-Tool! This tool allows you to perform various text operations such as counting words, reversing text, and converting text to uppercase or lowercase.</p>
+<div>
+    <h2>Available Operations:</h2>
+    <ul>
+        <li><strong>Count Words:</strong> Count the number of words in a given text.</li>
+        <li><strong>Reverse Text:</strong> Reverse the order of characters in the text.</li>
+        <li><strong>Uppercase:</strong> Convert all characters in the text to uppercase.</li>
+        <li><strong>Lowercase:</strong> Convert all characters in the text to lowercase.</li>
+    </ul>
+    <h2>How to Use:</h2>
+    <ol>
+        <li>Select the desired operation from the list above.</li>
+        <li>Input your text in the provided text area.</li>
+        <li>Click the "Submit" button to perform the operation.</li>
+        <li>View the result displayed below the input area.</li>
+    </ol>
+    <h2>Example Usage:</h2>
+    <p>If you input the text "Hello World" and select "Count Words", the result will be "2".</p>
+    <p>If you input the text "Hello World" and select "Reverse Text", the result will be "dlroW olleH".</p>
+    <p>If you input the text "Hello World" and select "Uppercase", the result will be "HELLO WORLD".</p>
+    <p>If you input the text "Hello World" and select "Lowercase", the result will be "hello world".</p>
+    <div>
+        <h2>Try it Yourself:</h2>
+        <form action="/process" method="post">
+            <label for="operation">Select Operation:</label>
+            <select id="operation" name="operation">
+                <option value="count_words">Count Words</option>
+                <option value="reverse_text">Reverse Text</option>
+                <option value="uppercase">Uppercase</option>
+                <option value="lowercase">Lowercase</option>
+            </select>
+            <br><br>
+            <label for="input_text">Enter Text:</label><br>
+            <textarea id="input_text" name="input_text" rows="4" cols="50"></textarea>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <div id="result">
+            <!-- Result will be displayed here after form submission -->
+            {% if result %}
+                <h3>Result:</h3>
+                <p>{{ result }}</p>
+            {% endif %}
+            
+</div>
+
+
+    
+</body>
+</html>
