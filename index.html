@@ -50,8 +50,33 @@
         text-align: center;
 
     }
-
-</style>
+    button:hover {
+        background-color: #45a049;
+    }
+    button:active {
+        background-color: #3e8e41;
+        transform: translateY(2px);
+    }
+    button:focus {
+        outline: none;
+        box-shadow: 0 0 5px #4CAF50;
+    }
+   
+    button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+        box-shadow: none;
+        transform: none;
+        color: #666;
+    }
+    button:disabled:hover {
+        background-color: #ccc;
+        cursor: not-allowed;
+        box-shadow: none;
+        transform: none;
+        color: #666;
+    }
+    </style>
 <body>
 <h1>Text Operations Tool</h1>
 <p>Welcome to the Text-Operations-Tool! This tool allows you to perform various text operations such as counting words, reversing text, and converting text to uppercase or lowercase.</p>
