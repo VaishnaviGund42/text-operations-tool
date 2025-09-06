@@ -30,36 +30,14 @@
 <h1>Text-Operations-Tool</h1>
 <p>Welcome to the Text-Operations-Tool! This tool allows you to perform various text operations such as counting words, reversing text, and converting text to uppercase or lowercase.</p>
 <textarea id="textInput" placeholder="Type or paste your text here..."></textarea><br>
-<div>Choose an operation:
-<button onclick="countWords()" >Count Words</button>
-<button onclick="reverseText()">Reverse Text</button>
+<button onclick="countWords()">Count Words</button>
+<button onclick="reverseText()">Reverse Text</button>   
 <button onclick="toUpperCase()">To Uppercase</button>
-<button onclick="toLowerCase()">To Lowercase</button></div>
-<p id="result"></p>
+<button onclick="toLowerCase()">To Lowercase</button>
+    
+
 <script>
-    function countWords() {
-        const text = document.getElementById('textInput').value;
-        const wordCount = text.trim().split(/\s+/).filter(word => word.length > 0).length;
-        document.getElementById('result').innerText = `Word Count: ${wordCount}`;
-    }
-
-    function reverseText() {
-        const text = document.getElementById('textInput').value;
-        const reversedText = text.split('').reverse().join('');
-        document.getElementById('result').innerText = `Reversed Text: ${reversedText}`;
-    }
-
-    function toUpperCase() {
-        const text = document.getElementById('textInput').value;
-        const upperText = text.toUpperCase();
-        document.getElementById('result').innerText = `Uppercase Text: ${upperText}`;
-    }
-
-    function toLowerCase() {
-        const text = document.getElementById('textInput').value;
-        const lowerText = text.toLowerCase();
-        document.getElementById('result').innerText = `Lowercase Text: ${lowerText}`;
-    }
+  
 </script>
     
 </body>
