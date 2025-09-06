@@ -35,6 +35,20 @@
 <button onclick="toUpperCase()">To Uppercase</button>
 <button onclick="toLowerCase()">To Lowercase</button>
 <div id="result"></div>
+<script>
+    function countWords() {
+        const text = document.getElementById('textInput').value;
+        const wordCount = text.trim().split(/\s+/).filter(word => word.length > 0).length;
+        document.getElementById('result').innerText = `Word Count: ${wordCount}`;
+    }
+
+
+    
+    
+</script>
+
+
+
 
 
 <script>
