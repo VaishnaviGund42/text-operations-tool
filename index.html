@@ -20,11 +20,21 @@
         text-align: center;
         font-size: 18px;
         color: #555;
+
+        margin-bottom: 20px;
+        max-width: 600px;
+        margin: auto;
+
     }
     .container {
         max-width: 600px;
         margin: auto;
         text-align: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
     }
     textarea {
         width: 100%;
@@ -91,7 +101,8 @@
     </style>
 <body>
 <h1>Text Operations Tool</h1>
-<p>Welcome to the Text-Operations-Tool! This tool allows you to perform various text operations such as counting words, reversing text, and converting text to uppercase or lowercase.</p>
+<p>Welcome to the Text-Operations-Tool! </p>
+   
 <div class="container">
 <textarea id="textInput" placeholder="Type or paste your text here..."></textarea><br>
 <button onclick="countWords()">Count Words</button>
