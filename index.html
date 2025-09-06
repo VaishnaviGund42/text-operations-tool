@@ -13,7 +13,17 @@
     h1 {
         color: #333;
         text-align: center;
-        
+
+    }
+    p {
+        text-align: center;
+        font-size: 18px;
+        color: #555;
+    }
+    .container {
+        max-width: 600px;
+        margin: auto;
+        text-align: center;
     }
     textarea {
         width: 100%;
@@ -34,17 +44,23 @@
     #result {
         margin-top: 20px;
         font-weight: bold;
+        font-size: 18px;
+
+        color: #333;
+        text-align: center;
+
     }
 
 </style>
 <body>
-<h1>Text-Operations-Tool</h1>
+<h1>Text Operations Tool</h1>
 <p>Welcome to the Text-Operations-Tool! This tool allows you to perform various text operations such as counting words, reversing text, and converting text to uppercase or lowercase.</p>
+<div class="container">
 <textarea id="textInput" placeholder="Type or paste your text here..."></textarea><br>
 <button onclick="countWords()">Count Words</button>
 <button onclick="reverseText()">Reverse Text</button>   
 <button onclick="toUpperCase()">To Uppercase</button>
-<button onclick="toLowerCase()">To Lowercase</button>
+<button onclick="toLowerCase()">To Lowercase</button></div>
 <div id="result"></div>
 <script>
     function countWords() {
