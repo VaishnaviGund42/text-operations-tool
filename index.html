@@ -41,6 +41,11 @@
         const wordCount = text.trim().split(/\s+/).filter(word => word.length > 0).length;
         document.getElementById('result').innerText = `Word Count: ${wordCount}`;
     }
+    function reverseText() {
+        const text = document.getElementById('textInput').value;
+        const reversedText = text.split('').reverse().join('');
+        document.getElementById('result').innerText = `Reversed Text: ${reversedText}`;
+    }
 
 
     
