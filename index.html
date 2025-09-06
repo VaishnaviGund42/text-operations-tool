@@ -46,6 +46,11 @@
         const reversedText = text.split('').reverse().join('');
         document.getElementById('result').innerText = `Reversed Text: ${reversedText}`;
     }
+    function toUpperCase() {
+        const text = document.getElementById('textInput').value;
+        const upperText = text.toUpperCase();
+        document.getElementById('result').innerText = `Uppercase Text: ${upperText}`;
+    }
 
 
     
